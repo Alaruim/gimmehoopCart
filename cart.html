@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GIMMEHOOP</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="cart.css">
+	<!-- Подключаем шрифт Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<!-- Полоска с промокодом -->
+		<div class="promo-bar">
+			<div>
+				BUY 2 GET 1 FREE <span class="code"> сode: </span> B2G1
+			</div>
+		</div>
+
+		<!-- Основной хедер -->
+		<nav class="navbar">
+			<div class="content">
+				<div class="header-container">
+
+                    <div class="burger-menu desktop-hidden">
+						<div class="burger-icon" onclick="toggleMenu()">
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						</div>
+						<div class="dropdown-menu mobile-hidden">
+						  <a href="#">HOME</a>
+						  <a href="#">SHOP</a>
+						  <a href="#">ABOUT US</a>
+						</div>
+					</div>
+
+					<div class="logo">
+						<img src="images/logo.png" alt="Logo">
+					</div>
+					<a class="mobile-hidden" href="#">HOME</a>
+					<div class="dropdown-shop mobile-hidden">
+						<div class="a-shop">
+							<a href="#">
+								<span>SHOP</span>
+								<img src="images/shop-vector.svg" alt="Logo">
+							</a>
+							<div class="dropdown-menu-shop">
+								<a href="#">Framed Canvas Collection</a>
+								<a href="#">Basketball Art Framed Hoops</a>
+								<a href="#">Surfboards</a>
+								<a href="#">Arts</a>
+							</div>
+						</div>
+					</div>
+					<a  class="mobile-hidden" href="#">ABOUT US</a>
+					<div class="nav-icons ">
+						<button class="search-btn mobile-hidden">
+							<img src="images/search.svg" alt="Logo">
+						</button>
+						<button class="cart-btn">
+							<div class="cart-and-circle">
+								<img src="images/cart.svg" alt="Logo">
+								<div>0</div>
+							</div>
+							<span class="mobile-hidden">$0.00</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- 1 блок -->
+    <div class="content">
+        <div class="block-ShoppingCart-head">
+            <a href=""><img class="block-ShoppingCart-head-arrow mobile-hidden" src="images/block-ShoppingCart-head-arrow.png" alt=""></a>
+            <div class="block-ShoppingCart-head-cartAmount mobile-hidden">
+                <div class="block-ShoppingCart-head-cartAmount-text">CART</div>
+                <span>(2)</span>
+            </div>
+            <h2>01 SHOPPING CART</h2>
+            <div class="block-ShoppingCart-head-dontForget">
+                <div class="block-ShoppingCart-head-dontForget-text">Don't forget to get the ball for your Hoop</div>
+                <div class="block-ShoppingCart-head-dontForget-blockMain">
+                    <img src="images/block-ShoppingCart-head-dontForget-blockMain-img.png" alt="">
+                    <div class="block-ShoppingCart-head-dontForget-blockMain-prodPrice">
+                        <div class="block-ShoppingCart-head-dontForget-block-prodPrice-prod">Mini Ball #1</div>
+                        <div class="block-ShoppingCart-head-dontForget-block-prodPrice-price">$29.90</div>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div class="block-ShoppingCart-head">
+    </div>
+
+    <div class="content">
+        <div class="block-ShoppingCart-main">
+            <hr>
+            <div class="block-ShoppingCart-main-products">
+                <div class="block-ShoppingCart-main-products-prods">
+                    <div class="del-prod-img">
+                        <img src="images/delete-prod.svg" alt="">
+                    </div>
+                    <img class="prod-img" src="images/block-ShoppingCart-main-products-img.png" alt="">
+                    <div class="block-ShoppingCart-main-products-prod">
+                        <h3>MICHAL JORDAN ART // CANVAS BASKEBALL HOOP</h3>
+                        <div class="dropdown-container">
+                            <div class="custom-select">
+                                <div class="selected">
+                                    <span>20*16 inches (50*40cm)</span>
+                                    <img src="images/arrow.svg" alt="">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="option">20*16 inches (50*40cm)</div>
+                                    <div class="option">30*26 inches (75*65cm)</div>
+                                    <div class="option">40*32 inches (100*80cm)</div>
+                                    <div class="option">64*48 inches (162*123cm)</div>
+                                </div>
+                                <!-- Скрытый селект -->
+                                <select class="hidden-select">
+                                    <option value="20*16 inches (50*40cm)">20*16 inches (50*40cm)</option>
+                                    <option value="30*26 inches (75*65cm)">30*26 inches (75*65cm)</option>
+                                    <option value="40*32 inches (100*80cm)">40*32 inches (100*80cm)</option>
+                                    <option value="64*48 inches (162*123cm)">64*48 inches (162*123cm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="container-button">
+                            <span class="mobile-hidden">Quantity</span>
+                            <button class="minus-button">-</button>
+                            <input type="number" id="quantity" value="0">
+                            <button class="plus-button">+</button>
+                        </div>
+    
+                    </div>
+                    <div class="block-ShoppingCart-main-products-price">
+                        <div class="block-ShoppingCart-main-products-price-old">$499.90</div>
+                        <div class="block-ShoppingCart-main-products-price-act">$379.90</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="block-ShoppingCart-main-products-prods">
+                    <div class="del-prod-img">
+                        <img src="images/delete-prod.svg" alt="">
+                    </div>
+                    <img class="prod-img" src="images/block-ShoppingCart-main-products-img.png" alt="">
+                    <div class="block-ShoppingCart-main-products-prod">
+                        <h3>MICHAL JORDAN ART // CANVAS BASKEBALL HOOP</h3>
+                        <div class="dropdown-container">
+                            <div class="custom-select">
+                                <div class="selected">
+                                    <span>20*16 inches (50*40cm)</span>
+                                    <img src="images/arrow.svg" alt="">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="option">20*16 inches (50*40cm)</div>
+                                    <div class="option">30*26 inches (75*65cm)</div>
+                                    <div class="option">40*32 inches (100*80cm)</div>
+                                    <div class="option">64*48 inches (162*123cm)</div>
+                                </div>
+                                <!-- Скрытый селект -->
+                                <select class="hidden-select">
+                                    <option value="20*16 inches (50*40cm)">20*16 inches (50*40cm)</option>
+                                    <option value="30*26 inches (75*65cm)">30*26 inches (75*65cm)</option>
+                                    <option value="40*32 inches (100*80cm)">40*32 inches (100*80cm)</option>
+                                    <option value="64*48 inches (162*123cm)">64*48 inches (162*123cm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="container-button">
+                            <span class="mobile-hidden">Quantity</span>
+                            <button class="minus-button">-</button>
+                            <input type="number" id="quantity" value="0">
+                            <button class="plus-button">+</button>
+                        </div>
+    
+                    </div>
+                    <div class="block-ShoppingCart-main-products-price">
+                        <div class="block-ShoppingCart-main-products-price-old">$499.90</div>
+                        <div class="block-ShoppingCart-main-products-price-act">$379.90</div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="block-ShoppingCart-main-products-prods">
+                    <div class="del-prod-img">
+                        <img src="images/delete-prod.svg" alt="">
+                    </div>
+                    <img class="prod-img" src="images/block-ShoppingCart-main-products-img.png" alt="">
+                    <div class="block-ShoppingCart-main-products-prod">
+                        <h3>MICHAL JORDAN ART // CANVAS BASKEBALL HOOP</h3>
+                        <div class="dropdown-container">
+                            <div class="custom-select">
+                                <div class="selected">
+                                    <span>20*16 inches (50*40cm)</span>
+                                    <img src="images/arrow.svg" alt="">
+                                </div>
+                                <div class="dropdown">
+                                    <div class="option">20*16 inches (50*40cm)</div>
+                                    <div class="option">30*26 inches (75*65cm)</div>
+                                    <div class="option">40*32 inches (100*80cm)</div>
+                                    <div class="option">64*48 inches (162*123cm)</div>
+                                </div>
+                                <!-- Скрытый селект -->
+                                <select class="hidden-select">
+                                    <option value="20*16 inches (50*40cm)">20*16 inches (50*40cm)</option>
+                                    <option value="30*26 inches (75*65cm)">30*26 inches (75*65cm)</option>
+                                    <option value="40*32 inches (100*80cm)">40*32 inches (100*80cm)</option>
+                                    <option value="64*48 inches (162*123cm)">64*48 inches (162*123cm)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="container-button">
+                            <span class="mobile-hidden">Quantity</span>
+                            <button class="minus-button">-</button>
+                            <input type="number" id="quantity" value="0">
+                            <button class="plus-button">+</button>
+                        </div>
+    
+                    </div>
+                    <div class="block-ShoppingCart-main-products-price">
+                        <div class="block-ShoppingCart-main-products-price-old">$499.90</div>
+                        <div class="block-ShoppingCart-main-products-price-act">$379.90</div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+            <div class="block-ShoppingCart-main-cartTotals">
+                <h3>CART TOTALS</h3>
+                <div class="price-mobile desktop-hidden">
+                    <span>$599.80</span>
+                </div>
+                <div class="block-ShoppingCart-main-cartTotals-sub mobile-hidden">
+                    <div class="block-ShoppingCart-main-cartTotals-sub-pr">
+                        <span>SUBTOTAL</span>
+                        <span>$599.80</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="block-ShoppingCart-main-cartTotals-total mobile-hidden">
+                    <div class="block-ShoppingCart-main-cartTotals-total-pr">
+                        <span>TOTAL</span>
+                        <span>$599.80</span>
+                    </div>
+                    <hr>
+                </div>
+                <a>Did you get a coupon? Write it here</a>
+                <div class="input-block">
+                    <input type="text" placeholder="Coupon code">
+                    <hr>
+                </div>
+                <button class="coupon">APPLY COUPON</button>
+                <button class="checkout">PROCEED TO CHECKOUT</button>
+            </div>
+        </div class="block-ShoppingCart-main">
+        <div class="block-ShoppingCart-checkout">
+            <h2>02 CHECKOUT</h2>
+        </div>
+        <div class="block-ShoppingCart-orderComplete">
+            <h2>03 ORDER COMPLETE</h2>
+        </div>
+    </div>
+    <div class="arrow-2 desktop-hidden">
+        <a href=""><img src="images/block-ShoppingCart-head-arrow.png" alt=""></a>
+    </div>
+    <!-- footer -->
+    <div class="footer mobile-hidden">
+        <div class="content footer-content">
+            <div class="footer-menu">
+                <h3>MENU</h3>
+                <a href="">Home</a>
+                <a href="">Shop</a>
+                <a href="">
+                    <li>Framed Canvas Collection </li>
+                </a>
+                <a href="">
+                    <li>Basketball Art Framed Hoops </li>
+                </a>
+                <a href="">
+                    <li> Surfboards</li>
+                </a>
+                <a href="">
+                    <li>Arts</li>
+                </a>
+                <a href="">About Us</a>
+            </div>
+            <div class="footer-center">
+                <div class="contacts">
+                    <span>GIMMEHOOP</span>
+                    <a href="">support@gimmehoop.com</a>
+                    <div class="contacts-img">
+                        <a href=""><img src="images/facebook.svg" alt=""></a>
+                        <a href=""><img src="images/inst.svg" alt=""></a>
+                        <a href=""><img src="images/tt.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cart-copyright">
+                    <img src="images/card.png" alt="">
+                    <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <h3>POLICY</h3>
+                <a href="">Refund Policy</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">Shipping Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer desktop-hidden">
+        <div class="content footer-content">
+            <div class="contacts">
+                <span>GIMMEHOOP</span>
+                <a href="">support@gimmehoop.com</a>
+                <div class="contacts-img">
+                    <a href=""><img src="images/facebook.svg" alt=""></a>
+                    <a href=""><img src="images/inst.svg" alt=""></a>
+                    <a href=""><img src="images/tt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-center1">
+                <div class="footer-menu">
+                    <h3>MENU</h3>
+                    <a href="">Home</a>
+                    <a href="">Shop</a>
+                    <a href="">
+                        <li>Framed Canvas Collection </li>
+                    </a>
+                    <a href="">
+                        <li>Basketball Art Framed Hoops </li>
+                    </a>
+                    <a href="">
+                        <li> Surfboards</li>
+                    </a>
+                    <a href="">
+                        <li>Arts</li>
+                    </a>
+                    <a href="">About Us</a>
+                </div>
+                <div class="footer-policy">
+                    <h3>POLICY</h3>
+                    <a href="">Refund Policy</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Shipping Policy</a>
+                </div>
+            </div>
+            
+            <div class="cart-copyright">
+                <img src="images/card.png" alt="">
+                <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
